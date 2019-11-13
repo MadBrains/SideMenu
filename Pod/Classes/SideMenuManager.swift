@@ -240,6 +240,7 @@ open class SideMenuManager: NSObject {
         
         forMenu.transitioningDelegate = transition
         forMenu.modalPresentationStyle = .overFullScreen
+        forMenu.modalPresentationCapturesStatusBarAppearance = true
         forMenu.leftSide = leftSide
         
         if forMenu.sideMenuManager != self {
